@@ -1,0 +1,9 @@
+I1=[1,2,3,2,1]
+k = []
+
+for j in I1:
+    if j not in k:
+        k.append(j)
+    else:
+        print("The first duplicated value is: ",j)
+        break
