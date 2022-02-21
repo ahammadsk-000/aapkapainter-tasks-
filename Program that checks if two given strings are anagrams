@@ -1,0 +1,24 @@
+s1 = "Mary"
+s2 = "Army"
+d1={}
+d2 = {}
+for i in s1:
+    if i not in d1:
+        i = i.lower()
+        d1[i] = 1
+    else:
+        i= i.lower()
+        d1[i] = d1[i]+1
+
+for j in s2:
+    if j not in d2:
+        j= j.lower()
+        d2[j] = 1
+    else:
+        j = j.lower()
+        d2[j] = d2[j] + 1
+
+if d1==d2:
+    print("Both are Anagrams")
+else:
+    print("Both are not Anagrams")
